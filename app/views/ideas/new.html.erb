@@ -4,6 +4,7 @@
   <%= form_for @idea do |f| %>
     Idea: <%= f.text_field :idea %><br />
     Author: <%= f.text_field :author %><br />
+    <% email = current_user.email %>
     <%= f.submit %>
   <% end %>
 <% else %>
