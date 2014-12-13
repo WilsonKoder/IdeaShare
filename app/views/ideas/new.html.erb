@@ -1,8 +1,11 @@
-<h1>IdeaShare</h1>
+<h1>IDEASHARE</h1>
 <h2>Create a new Idea</h2>
-
-<%= form_for @idea do |f| %>
-  Idea: <%= f.text_field :idea %><br />
-  Author: <%= f.text_field :author %><br />
-  <%= f.submit %>
+<% if user_signed_in? %>
+  <%= form_for @idea do |f| %>
+    Idea: <%= f.text_field :idea %><br />
+    Author: <%= f.text_field :author %><br />
+    <%= f.submit %>
+  <% end %>
+<% else %>
+  <h3>Please Sign In Before Submitting an Idea </h3>
 <% end %>
