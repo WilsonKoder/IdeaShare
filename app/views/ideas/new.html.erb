@@ -1,0 +1,8 @@
+<h1>IdeaShare</h1>
+<h2>Create a new Idea</h2>
+
+<%= form_for @idea do |f| %>
+  Idea: <%= f.text_field :idea %><br />
+  Author: <%= f.text_field :author %><br />
+  <%= f.submit %>
+<% end %>

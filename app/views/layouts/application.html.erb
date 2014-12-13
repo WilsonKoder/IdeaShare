@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IdeaShare</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<%= yield %>
+
+
+<div id=links>
+  <ul id=navLinks>
+    <li><%= link_to("New Idea", new_idea_path) %></li>
+  </ul>
+</div>
+
+</body>
+</html>
