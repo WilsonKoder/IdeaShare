@@ -1,4 +1,11 @@
 <h1>IDEASHARE</h1>
+
+<div id=amountOfIdeas>
+  <%= @ideas.length %> ideas
+</div>
+<br />
+<br />
+<br />
 <% @ideas.each do |idea| %>
   <div id=idea>
   <h2><%= idea.idea %></h2>

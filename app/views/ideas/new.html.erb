@@ -1,4 +1,7 @@
 <h1>IDEASHARE</h1>
+<div id=amountOfIdeas>
+  <%= @ideas.length %>
+</div>
 <h2>Create a new Idea</h2>
 <% if user_signed_in? %>
   <%= form_for @idea do |f| %>
