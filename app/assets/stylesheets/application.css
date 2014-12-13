@@ -33,7 +33,7 @@ a {
 }
 
 @font-face {
-  font-family: Aventura-Bold;
+  font-family: Aventura-Bold, 'Slabo 27px';
   src: url("Aventura-Bold.otf")
 }
 
@@ -44,7 +44,7 @@ a {
 
 h1 {
   text-align: center;
-  font-family: Aventura-Bold, sans-serif;
+  font-family: Aventura-Bold, 'Slabo 27px', sans-serif;
   padding: 2px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -52,7 +52,7 @@ h1 {
 
 #idea {
    padding: 5px;
-   font-family: Jaapokki, sans-serif;
+   font-family: Jaapokki, 'Slabo 27px',sans-serif;
    text-shadow: 2px 2px 10px #888888;
    width: 30%;
    box-shadow: 5px 5px 30px #888888;
